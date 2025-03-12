@@ -11,6 +11,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+class TopicRequest(BaseModel):
+    topic: str
+
 class CodeSubmission(BaseModel):
     user_code: str
     correct_code: str
@@ -81,8 +84,15 @@ def submit_code(submission: CodeSubmission):
     return result
 
 @app.post("/get_info")
-def ai_info(topic : str):
-    prompt = f"Explain the concept of {topic} in coding in a simple and detailed way. Include examples, analogies if necessary, and break down the explanation step by step. Make sure to explain why and how it's used, as well as its importance in programming. For example, talk about practical applications or scenarios where this concept is commonly used. Explain in minimum lines possible"
+def ai_info(request: TopicRequest):
+    # Extract the topic from the JSON request body
+    topic = request.topic
+    
+    # Create a prompt using the extracted topic
+    prompt = f"Explain the concept of {topic} in coding in a simple and detailed way. Include examples, analogies if necessary, and break down the explanation step by step. Make sure to explain why and how it's used, as well as its importance in programming. For example, talk about practical applications or scenarios where this concept is commonly used. Explain in minimum lines possible."
+    
+    # Generate response (simulated)
     response = model.generate_content(prompt)
-    response = model.generate_content(prompt)
-    return response.text.strip()
+    
+    # Return the stripped response
+    return {"response": response.text.strip()}
