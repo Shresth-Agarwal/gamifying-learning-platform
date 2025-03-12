@@ -6,6 +6,10 @@ import os
 from pydantic import BaseModel
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
+
+
+load_dotenv()
 
 class CodeSubmission(BaseModel):
     user_code: str
@@ -22,9 +26,9 @@ app.add_middleware(
     allow_headers=["*"],  # Allows all headers
 )
 
-allow_origins=["https://energized-location-546589.framer.app"]
+#allow_origins=["https://energized-location-546589.framer.app"]
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:\\Users\\Shresth Agarwal\\OneDrive\\Documents\\Project\\edu.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
 model = GenerativeModel("gemini-2.0-pro-exp-02-05")
 
 
@@ -75,3 +79,10 @@ def get_buggy_code():
 def submit_code(submission: CodeSubmission):
     result = evaluate_user_code(submission.user_code, submission.correct_code)
     return result
+
+@app.post("/get_info")
+def ai_info(topic : str):
+    prompt = f"Explain the concept of {topic} in coding in a simple and detailed way. Include examples, analogies if necessary, and break down the explanation step by step. Make sure to explain why and how it's used, as well as its importance in programming. For example, talk about practical applications or scenarios where this concept is commonly used. Explain in minimum lines possible"
+    response = model.generate_content(prompt)
+    response = model.generate_content(prompt)
+    return response.text.strip()
