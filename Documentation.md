@@ -102,8 +102,7 @@ Currently, the API does not require authentication. Future versions may include 
 # - openai (used in trivia)
 
 ---
-##Website Guide
-[watch video][Screen-Recording-2025-03-12-115429.mp4]
+
 
 ## Error Handling
 The API returns appropriate error messages in case of invalid requests.
