@@ -1,0 +1,113 @@
+[
+    {
+        "question": "What is the output of the following code?\n```python\nprint(10 + 5 * 2)\n```",
+        "options": ["A. 20", "B. 30", "C. 40", "D. 100"],
+        "correct_answer": "A. 20"
+    },
+    {
+        "question": "Which of the following is NOT a valid variable name in Python?",
+        "options": ["A. _myvar", "B. 2myvar", "C. my_var", "D. myVar"],
+        "correct_answer": "B. 2myvar"
+    },
+    {
+      "question": "What will be the output of the following code?\n```python\nprint(2 ** 3 ** 2)\n```",
+      "options": ["A. 64", "B. 512", "C. 9", "D. 36"],
+      "correct_answer": "B. 512"
+    },
+    {
+      "question": "Which of the following is used to define a function in Python?",
+      "options": ["A. function", "B. def", "C. define", "D. func"],
+      "correct_answer": "B. def"
+    },
+    {
+      "question": "What will be the output of the following code?\n```python\nprint(bool('False'))\n```",
+      "options": ["A. True", "B. False", "C. None", "D. Error"],
+      "correct_answer": "A. True"
+    },
+    {
+      "question": "What is the correct way to open a file in Python for reading?",
+      "options": ["A. open('file.txt', 'w')", "B. open('file.txt', 'r')", "C. open('file.txt', 'rb')", "D. open('file.txt', 'a')"],
+      "correct_answer": "B. open('file.txt', 'r')"
+    },
+    {
+      "question": "Which data type is **mutable** in Python?",
+      "options": ["A. tuple", "B. list", "C. string", "D. int"],
+      "correct_answer": "B. list"
+    },
+    {
+      "question": "What will be the output of the following code?\n```python\nprint(type({}))\n```",
+      "options": ["A. <class 'dict'>", "B. <class 'set'>", "C. <class 'list'>", "D. <class 'tuple'>"],
+      "correct_answer": "A. <class 'dict'>"
+    },
+    {
+      "question": "Which of the following is NOT a valid variable name in Python?",
+      "options": ["A. _var", "B. var123", "C. 123var", "D. __init__"],
+      "correct_answer": "C. 123var"
+    },
+    {
+      "question": "What will be the output of the following code?\n```python\nprint(10 // 3)\n```",
+      "options": ["A. 3.33", "B. 3", "C. 3.0", "D. 4"],
+      "correct_answer": "B. 3"
+    },
+    {
+      "question": "Which method is used to remove an item from a list by value?",
+      "options": ["A. pop()", "B. delete()", "C. remove()", "D. discard()"],
+      "correct_answer": "C. remove()"
+    },
+    {
+      "question": "What does the `len()` function return when applied to a dictionary?",
+      "options": ["A. The number of key-value pairs", "B. The length of keys", "C. The number of values", "D. The number of unique values"],
+      "correct_answer": "A. The number of key-value pairs"
+    },
+    {
+      "question": "What will be the output of the following code?\n```python\nprint(type(5 / 2))\n```",
+      "options": ["A. <class 'int'>", "B. <class 'float'>", "C. <class 'str'>", "D. <class 'complex'>"],
+      "correct_answer": "B. <class 'float'>"
+    },
+    {
+      "question": "Which operator is used to check if two variables refer to the same object in memory?",
+      "options": ["A. ==", "B. =", "C. is", "D. in"],
+      "correct_answer": "C. is"
+    },
+    {
+      "question": "What will be the output of the following code?\n```python\nx = [1, 2, 3]\ny = x\ny.append(4)\nprint(x)\n```",
+      "options": ["A. [1, 2, 3]", "B. [1, 2, 3, 4]", "C. [1, 2, 3] and [1, 2, 3, 4]", "D. Error"],
+      "correct_answer": "B. [1, 2, 3, 4]"
+    },
+    {
+      "question": "Which of the following statements is used to exit a loop?",
+      "options": ["A. stop", "B. break", "C. exit", "D. return"],
+      "correct_answer": "B. break"
+    },
+    {
+      "question": "Which of the following is NOT a Python built-in data type?",
+      "options": ["A. list", "B. dict", "C. array", "D. tuple"],
+      "correct_answer": "C. array"
+    },
+    {
+      "question": "What is the default return value of a function that does not explicitly return a value?",
+      "options": ["A. 0", "B. None", "C. False", "D. ''"],
+      "correct_answer": "B. None"
+    },
+    {
+      "question": "Which keyword is used to define a class in Python?",
+      "options": ["A. class", "B. Class", "C. define", "D. struct"],
+      "correct_answer": "A. class"
+    },
+    {
+      "question": "What will be the output of the following code?\n```python\nprint(bool(' '))\n```",
+      "options": ["A. True", "B. False", "C. None", "D. Error"],
+      "correct_answer": "A. True"
+    },
+    {
+      "question": "Which of the following is used to create an empty set in Python?",
+      "options": ["A. {}", "B. set()", "C. empty()", "D. []"],
+      "correct_answer": "B. set()"
+    },
+    {
+      "question": "What will be the output of the following code?\n```python\nprint('Hello' * 3)\n```",
+      "options": ["A. HelloHelloHello", "B. Hello 3 times", "C. Error", "D. ['Hello', 'Hello', 'Hello']"],
+      "correct_answer": "A. HelloHelloHello"
+    }
+  ]
+  
