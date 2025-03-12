@@ -1,0 +1,52 @@
+{
+    "1": {
+        "title": "FizzBuzz",
+        "description": "Write a program that prints numbers from 1 to 100...every multiple of 3 should be replaced with the word Fizz, every multiple of 5 should be replaced with the word Buzz, and every multiple of both 3 and 5 should be replaced with FizzBuzz.",
+        "input": "N (integer)",
+        "output": "List of numbers and FizzBuzz replacements",
+        "test_cases": [
+            {"input": "5", "expected_output": ["1", "2", "Fizz", "4", "Buzz"]},
+            {"input": "15", "expected_output": ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz"]}
+        ]
+    },
+    "2": {
+        "title": "Reverse String",
+        "description": "Write a function to reverse a given string.",
+        "input": "A string",
+        "output": "Reversed string",
+        "test_cases": [
+            {"input": "\"hello\"", "expected_output": "\"olleh\""},
+            {"input": "\"world\"", "expected_output": "\"dlrow\""}
+        ]
+    },
+    "3": {
+        "title": "Palindrome Checker",
+        "description": "Write a function that checks if a given string is a palindrome (reads the same backward as forward).",
+        "input": "A string",
+        "output": "Boolean value (True if the string is a palindrome, False otherwise)",
+        "test_cases": [
+            {"input": "\"racecar\"", "expected_output": "True"},
+            {"input": "\"hello\"", "expected_output": "False"}
+        ]
+    },
+    "4": {
+        "title": "Factorial Calculator",
+        "description": "Write a function to calculate the factorial of a given non-negative integer.",
+        "input": "An integer (non-negative)",
+        "output": "Factorial of the given integer",
+        "test_cases": [
+            {"input": "5", "expected_output": "120"},
+            {"input": "0", "expected_output": "1"}
+        ]
+    },
+    "5": {
+        "title": "Anagram Checker",
+        "description": "Write a function that checks if two given strings are anagrams (contain the same characters in the same frequency).",
+        "input": "Two strings",
+        "output": "Boolean value (True if the strings are anagrams, False otherwise)",
+        "test_cases": [
+            {"input": "\"listen\", \"silent\"", "expected_output": "True"},
+            {"input": "\"hello\", \"world\"", "expected_output": "False"}
+        ]
+    }
+}
