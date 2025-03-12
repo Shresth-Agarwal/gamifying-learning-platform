@@ -53,6 +53,11 @@ A thrilling fast-paced coding challenge where users solve problems under time co
 ## 📸 Screenshots
 
 > Add screenshots of your project here.
+> ![image](https://github.com/user-attachments/assets/eb019a18-f717-4213-8b31-bef3a4ce45f4)
+> ![image](https://github.com/user-attachments/assets/48fc3558-975e-43d2-ab94-a1d0e3e8f8d6)
+> 
+
+
 
 ## 🤝 Contributing
 
