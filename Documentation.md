@@ -1,5 +1,6 @@
 # API Documentation for Our Website
 
+Notice: This code can only be executed when the user has google autherization file
 ## Overview
 This API provides various endpoints for coding challenges, AI-generated buggy code, trivia games, and fast coding challenges. It is built using FastAPI and utilizes Vertex AI for generating buggy code.
 
